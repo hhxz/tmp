@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Junfan Huang
+# This file is distributed under the same license as the cobra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cobra \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-28 21:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../guide/howto.rst:5
+msgid "How-to guides"
+msgstr ""
+
+#: ../guide/howto.rst:7
+msgid ""
+"After building up the environment for COBRA from the :ref:`installation`,"
+" this page will guide you how to train this snake to do its jobs."
+msgstr ""
+
+#: ../guide/howto.rst:10
+msgid "Setup"
+msgstr ""
+
+#: ../guide/howto.rst:13
+msgid ":ref:`environment`"
+msgstr ""
+
+#: ../guide/howto.rst:14
+msgid ":ref:`installation`"
+msgstr ""
+
