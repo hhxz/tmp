@@ -1,0 +1,5 @@
+sphinx_rtd_theme
+recommonmark
+sphinx
+sphinx_markdown_tables
+six
