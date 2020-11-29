@@ -1,4 +1,29 @@
+.. raw:: html
 
+    <style>
+        .row {clear: both}
+        .row h2  {border-bottom: 1px solid gray;}
+
+        .column img {border: 1px solid gray;}
+
+        @media only screen and (min-width: 1000px),
+               only screen and (min-width: 500px) and (max-width: 768px){
+
+            .column {
+                padding-left: 5px;
+                padding-right: 5px;
+                float: left;
+            }
+
+            .column3  {
+                width: 33.3%;
+            }
+
+            .column2  {
+                width: 50%;
+            }
+        }
+    </style>
 
 ########################
 COBRA documentation
@@ -6,6 +31,8 @@ COBRA documentation
 
 .. image:: ./img/cobra-white.png
    :alt: cobra logo
+
+.. caution:: YOU ARE BE IN SS-ZOO. THERE MAY BE COBRA IN THIS AREA.
 
 ********
 Overview
@@ -49,7 +76,7 @@ Technical reference material, for classes, methods, APIs, commands.
 ************************
 Why the name COBRA?
 ************************
-.. caution:: Welcome to ss-zoo!
+.. caution:: You are in ss-zoo.
  We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` will be coming soon as well.
 
 Actually, you can find lots of ways to make sense of cobra. Here are the ways we think:
@@ -63,3 +90,13 @@ About us
 ********
 
 In ss-zoo, we currently have SpideR, COBRA. Our new members - Priranha, FROGS - will becoming soon as well.
+
+
+.. toctree::
+    :maxdepth: 3
+    :hidden:
+    
+    tutorials/environment
+    tutorials/installation
+    guide/howto
+    keypoints/keypoints
