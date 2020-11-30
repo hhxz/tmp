@@ -90,7 +90,6 @@ About SS-ZOO
 
 We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` -  will be coming soon!
 
-
 .. toctree::
     :maxdepth: 3
     :hidden:
