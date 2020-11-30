@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cobra \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-29 01:04+0000\n"
+"POT-Creation-Date: 2020-11-30 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: ../guide/howto.rst:5
-msgid "How-to guides"
-msgstr ""
-
-#: ../guide/howto.rst:7
-msgid ""
-"After building up the environment for COBRA from the :ref:`installation`,"
-" this page will guide you how to train this snake to do its jobs."
-msgstr ""
-
-#: ../guide/howto.rst:10
-msgid "Setup"
-msgstr ""
-
-#: ../guide/howto.rst:13
-msgid ":ref:`environment`"
-msgstr ""
-
-#: ../guide/howto.rst:14
-msgid ":ref:`installation`"
+#: ../keypoints/keypoints.rst:5
+msgid "Key points"
 msgstr ""
 

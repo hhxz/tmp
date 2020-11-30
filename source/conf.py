@@ -51,6 +51,11 @@ exclude_patterns = []
 #
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
+
+source_suffix = ['.rst', '.md']
+master_doc = 'index'
+# language = ['en', 'zh_CN'] 
+
 html_static_path = ['_static']
 html_logo = "cobra.png"
 html_theme_options = {
@@ -63,5 +68,4 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-language = 'zh_CN'  # 設置新項目的語言與中文
-locale_dirs = ['locale/']  # 設置本地化數據目錄
+

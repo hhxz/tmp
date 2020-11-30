@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cobra \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-29 01:04+0000\n"
+"POT-Creation-Date: 2020-11-30 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,137 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../index.rst:22
-msgid "<style>"
-msgstr ""
-
-#: ../index.rst:2
-msgid ".row {clear: both} .row h2  {border-bottom: 1px solid gray;}"
-msgstr ""
-
-#: ../index.rst:5
-msgid ".column img {border: 1px solid gray;}"
-msgstr ""
-
-#: ../index.rst:21
-msgid "@media only screen and (min-width: 1000px),"
-msgstr ""
-
-#: ../index.rst:8
-msgid "only screen and (min-width: 500px) and (max-width: 768px){"
-msgstr ""
-
-#: ../index.rst:12
-msgid ".column {"
-msgstr ""
-
-#: ../index.rst:11
-msgid "padding-left: 5px; padding-right: 5px; float: left;"
-msgstr ""
-
-#: ../index.rst:14
-#: ../index.rst:18
-#: ../index.rst:22
-#: ../index.rst:23
-msgid "}"
-msgstr ""
-
-#: ../index.rst:16
-msgid ".column3  {"
-msgstr ""
-
-#: ../index.rst:17
-msgid "width: 33.3%;"
-msgstr ""
-
-#: ../index.rst:20
-msgid ".column2  {"
-msgstr ""
-
-#: ../index.rst:21
-msgid "width: 50%;"
-msgstr ""
-
-#: ../index.rst:24
-msgid "</style>"
-msgstr ""
-
-#: ../index.rst:28
+#: ../index.rst:30
 msgid "COBRA documentation"
 msgstr ""
 
 #: ../index.rst:35
+msgid "YOU ARE BE IN SS-ZOO. THERE MAY BE COBRA IN THIS AREA."
+msgstr ""
+
+#: ../index.rst:39
 msgid "Overview"
 msgstr ""
 
-#: ../index.rst:36
-msgid "COBRA is more than a snake. It is a spy who would guide you to find TF target genes given enough information."
+#: ../index.rst:41
+msgid "COBRA would be an excellent TF targets hunter based on its highly developed sense of smell for ChIP-seq and excellent sense of touch for RNA-seq. However, this is also a greedy snake. In order to let COBRA become your reliable partener, we highly recommond to feed at least 20 ChIP-seq experiments for it. Once COBRA gets enough feeds from users, it could do some cool stuffs, like dotplot painting. Why not have one yourself? Check this page out to see how it works now!"
 msgstr ""
 
-#: ../index.rst:38
-msgid "COBRA relies mostly on its sense of ChIP-seq smell and its sense of RNA-seq touch to play the game of TF targets hunting."
-msgstr ""
-
-#: ../index.rst:47
+#: ../index.rst:50
 msgid ":ref:`installation` - start here"
 msgstr ""
 
-#: ../index.rst:49
-msgid "For the new cobra users, how to setup a COBRA-friendly environment."
+#: ../index.rst:52
+msgid "For those new to SS-ZOO, start here to get your own COBRA locally now!"
 msgstr ""
 
-#: ../index.rst:54
+#: ../index.rst:59
 msgid ":ref:`how-to`"
 msgstr ""
 
-#: ../index.rst:56
-msgid "Practical step-by-step guides for the new users, covering several important topics."
+#: ../index.rst:61
+msgid "Introduce the COBRA abilities; practical step-by-step guides for the new COBRA users, covering several important topics."
 msgstr ""
 
-#: ../index.rst:61
+#: ../index.rst:66
 msgid ":ref:`key-points`"
 msgstr ""
 
-#: ../index.rst:63
+#: ../index.rst:68
 msgid "Explanation and analysis of some key features."
 msgstr ""
 
-#: ../index.rst:68
+#: ../index.rst:73
 msgid ":ref:`reference`"
 msgstr ""
 
-#: ../index.rst:70
+#: ../index.rst:75
 msgid "Technical reference material, for classes, methods, APIs, commands."
 msgstr ""
 
-#: ../index.rst:74
+#: ../index.rst:79
 msgid "Why the name COBRA?"
 msgstr ""
 
-#: ../index.rst:75
-msgid "Welcome to ss-zoo! We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` will be coming soon as well."
-msgstr ""
-
-#: ../index.rst:78
+#: ../index.rst:81
 msgid "Actually, you can find lots of ways to make sense of cobra. Here are the ways we think:"
 msgstr ""
 
-#: ../index.rst:80
+#: ../index.rst:83
 msgid "Literally: Combined Binding and Regulatory Analysis."
 msgstr ""
 
-#: ../index.rst:81
+#: ../index.rst:84
 msgid "Programming language: This snake was written in python."
 msgstr ""
 
-#: ../index.rst:82
+#: ../index.rst:85
 msgid "In Chinese: Glasses snake. Hopefully, with the glasses, cobra could find the target gene easier."
 msgstr ""
 
-#: ../index.rst:86
-msgid "About us"
+#: ../index.rst:89
+msgid "About SS-ZOO"
 msgstr ""
 
-#: ../index.rst:88
-msgid "In ss-zoo, we currently have SpideR, COBRA. Our new members - Priranha, FROGS - will becoming soon as well."
+#: ../index.rst:91
+msgid "We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` -  will be coming soon!"
 msgstr ""

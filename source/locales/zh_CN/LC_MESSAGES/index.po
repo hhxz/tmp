@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Junfan Huang
+# This file is distributed under the same license as the cobra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cobra \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-30 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../index.rst:30
+msgid "COBRA documentation"
+msgstr "COBRA 档案"
+
+#: ../index.rst:35
+msgid "YOU ARE BE IN SS-ZOO. THERE MAY BE COBRA IN THIS AREA."
+msgstr "危险！附近有COBRA出没！"
+
+#: ../index.rst:39
+msgid "Overview"
+msgstr "简历"
+
+#: ../index.rst:41
+msgid ""
+"COBRA would be an excellent TF targets hunter based on its highly "
+"developed sense of smell for ChIP-seq and excellent sense of touch for "
+"RNA-seq. However, this is also a greedy snake. In order to let COBRA "
+"become your reliable partener, we highly recommond to feed at least 20 "
+"ChIP-seq experiments for it. Once COBRA gets enough feeds from users, it "
+"could do some cool stuffs, like dotplot painting. Why not have one "
+"yourself? Check this page out to see how it works now!"
+msgstr "COBRA是一个优秀的TF目标基因猎手，凭借其蛇类出色的ChIP-seq嗅觉，以及RNA-seq触觉，在此领域独当一面。然而，它也有自己的缺点，和贪吃蛇一样，它也很贪心。所以，要使得COBRA变得靠谱，你必须投喂至少20个ChIP-seq实验。一旦得到了足够的喂投，COBRA可以开始做一些有趣的事情，比如绘图。是不是很有意思的一条蛇，领它！"
+
+#: ../index.rst:50
+msgid ":ref:`installation` - start here"
+msgstr ":ref:`installation` - 开始"
+
+#: ../index.rst:52
+msgid "For those new to SS-ZOO, start here to get your own COBRA locally now!"
+msgstr ""
+
+#: ../index.rst:59
+msgid ":ref:`how-to`"
+msgstr ""
+
+#: ../index.rst:61
+msgid ""
+"Introduce the COBRA abilities; practical step-by-step guides for the new "
+"COBRA users, covering several important topics."
+msgstr ""
+
+#: ../index.rst:66
+msgid ":ref:`key-points`"
+msgstr ""
+
+#: ../index.rst:68
+msgid "Explanation and analysis of some key features."
+msgstr ""
+
+#: ../index.rst:73
+msgid ":ref:`reference`"
+msgstr ""
+
+#: ../index.rst:75
+msgid "Technical reference material, for classes, methods, APIs, commands."
+msgstr ""
+
+#: ../index.rst:79
+msgid "Why the name COBRA?"
+msgstr ""
+
+#: ../index.rst:81
+msgid ""
+"Actually, you can find lots of ways to make sense of cobra. Here are the "
+"ways we think:"
+msgstr ""
+
+#: ../index.rst:83
+msgid "Literally: Combined Binding and Regulatory Analysis."
+msgstr ""
+
+#: ../index.rst:84
+msgid "Programming language: This snake was written in python."
+msgstr ""
+
+#: ../index.rst:85
+msgid ""
+"In Chinese: Glasses snake. Hopefully, with the glasses, cobra could find "
+"the target gene easier."
+msgstr ""
+
+#: ../index.rst:89
+msgid "About SS-ZOO"
+msgstr ""
+
+#: ../index.rst:91
+msgid ""
+"We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, "
+"``FROGS`` -  will be coming soon!"
+msgstr ""
+
