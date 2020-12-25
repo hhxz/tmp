@@ -70,8 +70,7 @@ msgstr ""
 
 #: ../index.rst:68
 msgid "Explanation and analysis of some key features."
-msgstr ""
-"探索一些关键的features"
+msgstr "探索一些关键的features"
 
 #: ../index.rst:73
 msgid ":ref:`reference`"
