@@ -1,0 +1,6 @@
+.. _scorepeaks:
+
+=================
+cobra scorepeaks
+=================
+

@@ -15,6 +15,9 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
+def setup(app):
+    app.add_css_file('custom.css')
+
 # -- Project information -----------------------------------------------------
 
 project = 'cobra'
@@ -51,11 +54,6 @@ exclude_patterns = []
 #
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
-
-source_suffix = ['.rst', '.md']
-master_doc = 'index'
-# language = ['en', 'zh_CN'] 
-
 html_static_path = ['_static']
 html_logo = "cobra.png"
 html_theme_options = {
@@ -67,5 +65,4 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
 

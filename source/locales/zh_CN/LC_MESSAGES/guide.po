@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cobra \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 08:39+0000\n"
+"POT-Creation-Date: 2020-12-25 18:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,248 +47,400 @@ msgid ":ref:`installation`"
 msgstr ""
 
 #: ../guide/howto.rst:18
+msgid "when you are ready"
+msgstr ""
+
+#: ../guide/howto.rst:20
 msgid "Cool, now let us have a look what kind of abilities does this snake have."
 msgstr ""
 
-#: ../guide/howto.rst:21
-msgid "Modules"
+#: ../guide/howto.rst:23
+msgid "Main Modules"
 msgstr ""
 
-#: ../guide/howto.rst:22
+#: ../guide/howto.rst:24
 msgid ""
-"Before we start, let's just quickly go through its main modules. COBRA "
-"contains three main modules:"
+"Before we start, let's just quickly go through its main modules. "
+"Currently, COBRA contains three main modules:"
 msgstr ""
 
-#: ../guide/howto.rst:25
+#: ../guide/howto.rst:27
 msgid "COBRA main modules"
 msgstr ""
 
-#: ../guide/howto.rst:29
+#: ../guide/howto.rst:31
 msgid "Command"
 msgstr ""
 
-#: ../guide/howto.rst:30
+#: ../guide/howto.rst:32
 msgid "Inputs"
 msgstr ""
 
-#: ../guide/howto.rst:31
+#: ../guide/howto.rst:33
 msgid "Outputs"
 msgstr ""
 
-#: ../guide/howto.rst:32
-msgid "``cobra chip-init``"
-msgstr ""
-
-#: ../guide/howto.rst:33
-msgid "narrowPeaks, custom PWM files"
-msgstr ""
-
 #: ../guide/howto.rst:34
-msgid "csv file with binding confidence"
+msgid "``cobra scorepeak``"
 msgstr ""
 
 #: ../guide/howto.rst:35
-msgid "``cobra find``"
+msgid "narrowPeaks, custom PWM files"
 msgstr ""
 
 #: ../guide/howto.rst:36
-msgid "binding confidence, csv file with differential expression"
+msgid "csv file with binding confidence"
 msgstr ""
 
 #: ../guide/howto.rst:37
-msgid "target genes with target probability"
+msgid "``cobra find``"
 msgstr ""
 
 #: ../guide/howto.rst:38
-msgid "``cobra vis``"
+msgid "binding confidence, csv file with differential expression"
 msgstr ""
 
 #: ../guide/howto.rst:39
-msgid "outputs from previous steps, labels"
+msgid "target genes with target probability"
 msgstr ""
 
 #: ../guide/howto.rst:40
+msgid "``cobra plot``"
+msgstr ""
+
+#: ../guide/howto.rst:41
+msgid "outputs from previous steps, labels"
+msgstr ""
+
+#: ../guide/howto.rst:42
 msgid "dotplots and other plots"
 msgstr ""
 
-#: ../guide/howto.rst:43
-msgid ""
-"Acturally, COBRA still have some other side abilities which would be "
-"introduced later."
-msgstr ""
-
 #: ../guide/howto.rst:45
-msgid "If you run ``cobra --help``, you will get the following:"
-msgstr ""
-
-#: ../guide/howto.rst:47
-msgid "(TODO) fix the help doccs"
-msgstr ""
-
-#: ../guide/howto.rst:95
-msgid "1.1 cobra chip-init"
-msgstr ""
-
-#: ../guide/howto.rst:97
 msgid ""
-"``chip-init``, literally, it is an ability for ChIP-seq data analysis. A "
-"simple example could be:"
+"*Note that: COBRA still have some other side abilities which would be "
+"introduced later. If you run* ``cobra --help`` *, you will get all the "
+"information you need.*"
 msgstr ""
 
-#: ../guide/howto.rst:105
+#: ../guide/howto.rst ../guide/scorepeaks.rst:5
+msgid "cobra scorepeaks"
+msgstr ""
+
+#: ../guide/howto.rst:61
 msgid ""
-"This command provides at lease 5 information which embedded into those "
-"parameters of ``cobra chip-init``: ``tf`` for transcription factors; "
-"``i`` for input; ``meme`` for PWM; ``--human`` or ``--mouse`` for "
-"speicies; ``--core`` for num of cores."
+":ref:`scorepeaks` **is to calculate binding confidence for each gene "
+"given the ChIP-seq peakcalling.** For example, let's say you are "
+"interested in human STAT1 direct targets. You'll need two inputs to run "
+"``cobra scorepeak``."
 msgstr ""
 
-#: ../guide/howto.rst:107
-msgid "cobra chip-init"
+#: ../guide/howto.rst:63
+msgid ""
+"``narrowPeak_dir/``: a directory contains all the narrowPeak files `(>20 "
+"files)`"
 msgstr ""
 
-#: ../guide/howto.rst:111 ../guide/howto.rst:144 ../guide/howto.rst:172
+#: ../guide/howto.rst:64
+msgid "``stat1_human.meme```: custom PWM file."
+msgstr ""
+
+#: ../guide/howto.rst:66
+msgid "Our current working folder structure shows below"
+msgstr ""
+
+#: ../guide/howto.rst:74
+msgid ""
+"If you have those two files prepared, you will be able to run ``cobra "
+"scorepeak`` now!"
+msgstr ""
+
+#: ../guide/howto.rst:81
+msgid "**show an example of** ``cobra scorepeaks``"
+msgstr ""
+
+#: ../guide/howto.rst:94
+msgid "cobra scorepeaks cheating sheet"
+msgstr ""
+
+#: ../guide/howto.rst:98 ../guide/howto.rst:146 ../guide/howto.rst:190
 msgid "Parameters"
 msgstr ""
 
-#: ../guide/howto.rst:112 ../guide/howto.rst:145 ../guide/howto.rst:173
+#: ../guide/howto.rst:99 ../guide/howto.rst:147 ../guide/howto.rst:191
 msgid "Functions"
 msgstr ""
 
-#: ../guide/howto.rst:113 ../guide/howto.rst:146 ../guide/howto.rst:174
+#: ../guide/howto.rst:100 ../guide/howto.rst:148 ../guide/howto.rst:192
 msgid "``--tf``"
 msgstr ""
 
-#: ../guide/howto.rst:114 ../guide/howto.rst:147 ../guide/howto.rst:175
+#: ../guide/howto.rst:101 ../guide/howto.rst:149 ../guide/howto.rst:193
 msgid "TF of interest *(default: STAT1)*"
 msgstr ""
 
-#: ../guide/howto.rst:115 ../guide/howto.rst:180
+#: ../guide/howto.rst:102 ../guide/howto.rst:198
 msgid "``-i``"
 msgstr ""
 
-#: ../guide/howto.rst:116
+#: ../guide/howto.rst:103
 msgid "input of narrowPeaks *(default: ./)*"
 msgstr ""
 
-#: ../guide/howto.rst:117
+#: ../guide/howto.rst:104
 msgid "``--meme``"
 msgstr ""
 
-#: ../guide/howto.rst:118
+#: ../guide/howto.rst:105
 msgid "input of custom PWM files *(default: tf_speicies.meme)*"
 msgstr ""
 
-#: ../guide/howto.rst:119
+#: ../guide/howto.rst:106
 msgid "``--human`` or ``--mouse``"
 msgstr ""
 
-#: ../guide/howto.rst:120
+#: ../guide/howto.rst:107
 msgid "given one to select speicies *(default: mouse)*"
 msgstr ""
 
-#: ../guide/howto.rst:121
+#: ../guide/howto.rst:108
 msgid "``--core``"
 msgstr ""
 
-#: ../guide/howto.rst:122
+#: ../guide/howto.rst:109
 msgid "num of cores to use *(default:1)*"
 msgstr ""
 
-#: ../guide/howto.rst:125
-msgid "The ChIP-seq peakcalling data is essential for COBRA training, without"
-msgstr ""
-
-#: ../guide/howto.rst:128
-msgid "1.2 cobra find"
-msgstr ""
-
-#: ../guide/howto.rst:130
-msgid ""
-"Users could use ``cobra find`` to find potential TF target genes. Here is"
-" an example:"
-msgstr ""
-
-#: ../guide/howto.rst:138
-msgid ""
-"Similarly, COBRA this time is going to find the potential TF targets by "
-"providing ouptut_dir."
-msgstr ""
-
-#: ../guide/howto.rst:140
+#: ../guide/howto.rst ../guide/howto.rst:142
 msgid "cobra find"
 msgstr ""
 
-#: ../guide/howto.rst:148
-msgid "``-c``"
+#: ../guide/howto.rst:119
+msgid ""
+"This module is to find the TF direct target genes by given the binding "
+"scores for each gene plus differential expression analysis results. COBRA"
+" will require two inputs as well:"
 msgstr ""
 
-#: ../guide/howto.rst:149
-msgid "csv files of chip confidence binging outputs *(default: ./)*"
+#: ../guide/howto.rst:121
+msgid "csv file with binding confidence (``human_stat1.csv``)"
+msgstr ""
+
+#: ../guide/howto.rst:122
+msgid "Differential expression analysis data (``rna_dir/``)"
+msgstr ""
+
+#: ../guide/howto.rst:128
+msgid "**show an example of** ``cobra find``"
 msgstr ""
 
 #: ../guide/howto.rst:150
-msgid "``-r``"
+msgid "``-c``"
 msgstr ""
 
 #: ../guide/howto.rst:151
-msgid "input of differential expression data or directory."
+msgid "csv files of chip confidence binging outputs *(default: ./)*"
 msgstr ""
 
-#: ../guide/howto.rst:152 ../guide/howto.rst:182
-msgid "``-o``"
+#: ../guide/howto.rst:152
+msgid "``-r``"
 msgstr ""
 
 #: ../guide/howto.rst:153
+msgid "input of differential expression data or directory."
+msgstr ""
+
+#: ../guide/howto.rst:154 ../guide/howto.rst:200
+msgid "``-o``"
+msgstr ""
+
+#: ../guide/howto.rst:155
 msgid "output dir. If it is not exist, create one."
 msgstr ""
 
-#: ../guide/howto.rst:157
-msgid "1.3 cobra vis"
+#: ../guide/howto.rst ../guide/howto.rst:186
+msgid "cobra plot"
 msgstr ""
 
-#: ../guide/howto.rst:159
+#: ../guide/howto.rst:165
 msgid ""
-"The coolest ability that COBRA have is using ``cobra vis`` to draw some "
+"The coolest ability that COBRA has is using ``cobra plot`` to draw some "
 "pretty images showing the TF binding status for every gene given the "
 "data. From those plots, bioloists would be able to discover some stories "
-"easier. Here is the magic command to activate ``cobra vis``."
+"easier. You could set"
 msgstr ""
 
-#: ../guide/howto.rst:168
-msgid "cobra vis"
+#: ../guide/howto.rst:167
+msgid "Here is the magic command to activate ``cobra plot``."
 msgstr ""
 
-#: ../guide/howto.rst:176
+#: ../guide/howto.rst:173
+msgid "**show an example of** ``cobra plot``"
+msgstr ""
+
+#: ../guide/howto.rst:194
 msgid "``-s``"
 msgstr ""
 
-#: ../guide/howto.rst:177
+#: ../guide/howto.rst:195
 msgid "species"
 msgstr ""
 
-#: ../guide/howto.rst:178
+#: ../guide/howto.rst:196
 msgid "``--gene``"
 msgstr ""
 
-#: ../guide/howto.rst:179
+#: ../guide/howto.rst:197
 msgid "list of genes of interest"
 msgstr ""
 
-#: ../guide/howto.rst:181
+#: ../guide/howto.rst:199
 msgid "outputs of cobra find (target genes with probs)"
 msgstr ""
 
-#: ../guide/howto.rst:183
+#: ../guide/howto.rst:201
 msgid "image outputs dir"
 msgstr ""
 
-#: ../guide/howto.rst:184
+#: ../guide/howto.rst:202
 msgid "``-t``"
 msgstr ""
 
-#: ../guide/howto.rst:185
+#: ../guide/howto.rst:203
 msgid "labels or targets (provided by users)"
 msgstr ""
+
+#: ../guide/howto.rst:214
+msgid "Test COBRA"
+msgstr ""
+
+#: ../guide/howto.rst:217
+msgid "a) Load test data"
+msgstr ""
+
+#: ../guide/howto.rst:219
+msgid ""
+"For those new friends, you may not have your data prepared yet to train "
+"this snake. Don't worry, in order to get familiar with users, COBRA "
+"itself have a test dataset in its pocket. All you need to do is to do "
+"ammunition loading using ``cobra load`` which will automatically load the"
+" ChIP-seq data into ``./narrow/``, RNA-seq data into ``./rna/``. Why not "
+"give it a trail now?"
+msgstr ""
+
+#: ../guide/howto.rst:231
+msgid ""
+"If you check your folder with ``ls``, you will find two folders -  "
+"``narrow`` and ``rna`` from  your current working directory (please make "
+"sure that COBRA have the permission to ``mkdir`` in the current working "
+"directory). Also, if you want to load in other folders, you can simply "
+"use the parameter ``--dir`` or ``-d`` following by the folder you want. "
+"(COBRA documentation writor assume that you are lazy and will load test "
+"data in the current working directory.)"
+msgstr ""
+
+#: ../guide/howto.rst:234
+msgid "b) Run cobra normally"
+msgstr ""
+
+#: ../guide/howto.rst:235
+msgid ""
+"Once you have your test data prepared, you could simply run ``cobra "
+"scorepeaks`` and ``cobra find`` step by step to get the results."
+msgstr ""
+
+#: ../guide/howto.rst:252
+msgid "c) Generate figures"
+msgstr ""
+
+#: ../guide/howto.rst:254
+msgid ""
+"Let's do some visualisation now. If you do ``ls``, you will find there "
+"are a few files available now. You have ``fimo.csv`` which is a "
+"intermediate step of motif filtering."
+msgstr ""
+
+#~ msgid "Modules"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Before we start, let's just quickly "
+#~ "go through its main modules. COBRA "
+#~ "contains three main modules:"
+#~ msgstr ""
+
+#~ msgid "``cobra chip-init``"
+#~ msgstr ""
+
+#~ msgid "``cobra vis``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Acturally, COBRA still have some other"
+#~ " side abilities which would be "
+#~ "introduced later."
+#~ msgstr ""
+
+#~ msgid "If you run ``cobra --help``, you will get the following:"
+#~ msgstr ""
+
+#~ msgid "(TODO) fix the help doccs"
+#~ msgstr ""
+
+#~ msgid "1.1 cobra chip-init"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``chip-init``, literally, it is an "
+#~ "ability for ChIP-seq data analysis. "
+#~ "A simple example could be:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This command provides at lease 5 "
+#~ "information which embedded into those "
+#~ "parameters of ``cobra chip-init``: "
+#~ "``tf`` for transcription factors; ``i`` "
+#~ "for input; ``meme`` for PWM; ``--human``"
+#~ " or ``--mouse`` for speicies; ``--core``"
+#~ " for num of cores."
+#~ msgstr ""
+
+#~ msgid "cobra chip-init"
+#~ msgstr ""
+
+#~ msgid "The ChIP-seq peakcalling data is essential for COBRA training, without"
+#~ msgstr ""
+
+#~ msgid "1.2 cobra find"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Users could use ``cobra find`` to "
+#~ "find potential TF target genes. Here "
+#~ "is an example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Similarly, COBRA this time is going "
+#~ "to find the potential TF targets "
+#~ "by providing ouptut_dir."
+#~ msgstr ""
+
+#~ msgid "1.3 cobra vis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The coolest ability that COBRA have "
+#~ "is using ``cobra vis`` to draw "
+#~ "some pretty images showing the TF "
+#~ "binding status for every gene given "
+#~ "the data. From those plots, bioloists"
+#~ " would be able to discover some "
+#~ "stories easier. Here is the magic "
+#~ "command to activate ``cobra vis``."
+#~ msgstr ""
+
+#~ msgid "cobra vis"
+#~ msgstr ""
 

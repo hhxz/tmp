@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cobra \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 08:39+0000\n"
+"POT-Creation-Date: 2020-12-25 18:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "COBRA 档案"
 
 #: ../index.rst:35
 msgid "YOU ARE BE IN SS-ZOO. THERE MAY BE COBRA IN THIS AREA."
-msgstr "危险！附近有COBRA出没！"
+msgstr "路人你好，欢迎光临SS-ZOO。危险！附近有COBRA出没！"
 
 #: ../index.rst:39
 msgid "Overview"
@@ -38,14 +38,19 @@ msgid ""
 "ChIP-seq experiments for it. Once COBRA gets enough feeds from users, it "
 "could do some cool stuffs, like dotplot painting. Why not have one "
 "yourself? Check this page out to see how it works now!"
-msgstr "COBRA是一个优秀的TF目标基因猎手，凭借其蛇类出色的ChIP-seq嗅觉，以及RNA-seq触觉，在此领域独当一面。然而，它也有自己的缺点，和贪吃蛇一样，它也很贪心。所以，要使得COBRA变得靠谱，你必须投喂至少20个ChIP-seq实验。一旦得到了足够的喂投，COBRA可以开始做一些有趣的事情，比如绘图。是不是很有意思的一条蛇，领它！"
+msgstr ""
+"COBRA是一个优秀的TF目标基因猎手，凭借其蛇类出色的ChIP-seq嗅觉，以及RNA-"
+"seq触觉，在此领域独当一面。然而，它也有自己的缺点，和贪吃蛇一样，它也很贪心。所以，要使得COBRA变得靠谱，你必须投喂至少20个ChIP-"
+"seq实验。一旦得到了足够的喂投，COBRA可以开始做一些有趣的事情，比如绘图。是不是很有意思的一条蛇，领它！"
 
 #: ../index.rst:50
 msgid ":ref:`installation` - start here"
 msgstr ":ref:`installation` - 开始"
 
 #: ../index.rst:52
-msgid "For those new to SS-ZOO, start here to get your own COBRA locally now!"
+msgid ""
+"For those new to SS-ZOO, start here to get your own COBRA locally now! "
+"Good luck on your journey!"
 msgstr ""
 
 #: ../index.rst:59
@@ -80,8 +85,8 @@ msgstr ""
 
 #: ../index.rst:81
 msgid ""
-"Actually, you can find lots of ways to make sense of cobra. Here are the "
-"ways we think:"
+"Actually, you can find lots of ways to make sense of COBRA. Here are the "
+"ideas we have:"
 msgstr ""
 
 #: ../index.rst:83
@@ -89,13 +94,11 @@ msgid "Literally: Combined Binding and Regulatory Analysis."
 msgstr ""
 
 #: ../index.rst:84
-msgid "Programming language: This snake was written in python."
+msgid "It is written in python."
 msgstr ""
 
 #: ../index.rst:85
-msgid ""
-"In Chinese: Glasses snake. Hopefully, with the glasses, cobra could find "
-"the target gene easier."
+msgid "Check out our Chinese version to see more."
 msgstr ""
 
 #: ../index.rst:89
@@ -104,7 +107,35 @@ msgstr ""
 
 #: ../index.rst:91
 msgid ""
-"We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, "
-"``FROGS`` -  will be coming soon!"
+"Welcome! Our SS-ZOO visitor! Based on our knowledge base, we think you "
+"are likely to be an bioinformatician who might also interested in finding"
+" out what kind of other animals do we have. We currently have ``SpideR``,"
+" ``COBRA``. Our new members - ``Priranha``, ``FROGS`` -  will be coming "
+"soon! You can check out our `lab page <https://www.samarajiwa-lab.org/>`_"
+" to find out more."
 msgstr ""
+
+#~ msgid "For those new to SS-ZOO, start here to get your own COBRA locally now!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Actually, you can find lots of "
+#~ "ways to make sense of cobra. Here"
+#~ " are the ways we think:"
+#~ msgstr ""
+
+#~ msgid "Programming language: This snake was written in python."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In Chinese: Glasses snake. Hopefully, "
+#~ "with the glasses, cobra could find "
+#~ "the target gene easier."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We currently have ``SpideR``, ``COBRA``. "
+#~ "Our new members - ``Priranha``, "
+#~ "``FROGS`` -  will be coming soon!"
+#~ msgstr ""
 

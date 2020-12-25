@@ -49,7 +49,7 @@ COBRA would be an excellent TF targets hunter based on its highly developed sens
 :ref:`installation` - start here
 =============================
 
-For those new to SS-ZOO, start here to get your own COBRA locally now!
+For those new to SS-ZOO, start here to get your own COBRA locally now! Good luck on your journey!
 
 .. For the new cobra users, how to setup a COBRA-friendly environment.
 
@@ -78,17 +78,18 @@ Technical reference material, for classes, methods, APIs, commands.
 Why the name COBRA?
 ************************
 
-Actually, you can find lots of ways to make sense of cobra. Here are the ways we think:
+Actually, you can find lots of ways to make sense of COBRA. Here are the ideas we have:
 
 - Literally: Combined Binding and Regulatory Analysis.
-- Programming language: This snake was written in python.
-- In Chinese: Glasses snake. Hopefully, with the glasses, cobra could find the target gene easier.
+- It is written in python.
+- Check out our Chinese version to see more.
 
 *************
 About SS-ZOO
 *************
 
-We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` -  will be coming soon!
+Welcome! Our SS-ZOO visitor! Based on our knowledge base, we think you are likely to be an bioinformatician who might also interested in finding out what kind of other animals do we have. We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS`` -  will be coming soon! You can check out our `lab page <https://www.samarajiwa-lab.org/>`_ to find out more.
+
 
 .. toctree::
     :maxdepth: 3
@@ -98,3 +99,4 @@ We currently have ``SpideR``, ``COBRA``. Our new members - ``Priranha``, ``FROGS
     tutorials/installation
     guide/howto
     keypoints/keypoints
+

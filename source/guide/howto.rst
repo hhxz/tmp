@@ -15,11 +15,13 @@ Before you start, please make sure you have all the required environment prepare
 - :ref:`environment`
 - :ref:`installation`
 
-.. note:: Cool, now let us have a look what kind of abilities does this snake have.
+.. admonition:: when you are ready
 
-Modules
+		Cool, now let us have a look what kind of abilities does this snake have.	
+
+Main Modules
 ~~~~~~~~~~~~~~
-Before we start, let's just quickly go through its main modules. COBRA contains three main modules:
+Before we start, let's just quickly go through its main modules. Currently, COBRA contains three main modules:
 
 
 .. list-table:: COBRA main modules
@@ -29,82 +31,67 @@ Before we start, let's just quickly go through its main modules. COBRA contains 
     * - Command
       - Inputs
       - Outputs
-    * - ``cobra chip-init``
+    * - ``cobra scorepeak``
       - narrowPeaks, custom PWM files
       - csv file with binding confidence
     * - ``cobra find``
       - binding confidence, csv file with differential expression
       - target genes with target probability
-    * - ``cobra vis``
+    * - ``cobra plot``
       - outputs from previous steps, labels
       - dotplots and other plots
 
 
-.. note:: Acturally, COBRA still have some other side abilities which would be introduced later.
+*Note that: COBRA still have some other side abilities which would be introduced later. If you run* ``cobra --help`` *, you will get all the information you need.*
 
-If you run ``cobra --help``, you will get the following:
+----------
 
-(TODO) fix the help doccs
-
-.. highlight:: sh
-
-::
-
-  (venv)$ cobra --help
-  usage: cobra [-h] [--version] {init,check,run,enh,eval,alter,vis,clear} ...
-  
-   ██████╗ ██████╗ ██████╗ ██████╗  █████╗
-  ██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔══██╗
-  ██║     ██║   ██║██████╔╝██████╔╝███████║
-  ██║     ██║   ██║██╔══██╗██╔══██╗██╔══██║
-  ╚██████╗╚██████╔╝██████╔╝██║  ██║██║  ██║
-   ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-  usage: cobra [-h] [--version] {init | check | run | eval | alter} ...
-  Cobra has three main options for users to find target gene from ChIP-seq and RNA-seq datasets.
-   - cobra init
-      "cobra init" is an initialisation process for ChIP-seq datasets (narrowpeak in our case).
-      Basically, this option is to help user to score each gene to get a idea of the gene importance from ChIP-seq datasets.
-   - cobra run
-      "cobra run" is a Gaussian Mixture model based process which requires two inputs: initialised ChIP-seq data and RNA-seq data (differential expression).
-   - cobra eval
-      "cobra eval" is a evaluation option for users to get a roughly idea of their results. Currently, it supports STAT target gene only.
-  
-  Cobra init process requires some software dependencies, like bedtools, fimo, etc.
-  system requirements:
-    - bedtools
-    - meme
-    - python3
-  python requirements are in requirements.txt.
-  
-  positional arguments:
-    {init,check,run,enh,eval,alter,vis,clear}
-                          subparsers
-      init                extract the chip-seq information for next stop, (every option is turn on by default, default species: mouse)
-      run                 run the gaussian mixture model and output the result
-      enh                 evaluate the result (print the accuracy)
-      eval                evaluate the result (print the accuracy)
-      alter               This alternative option is for getting stat target gene list
-      clear               clear all the cobra init
-  
-  optional arguments:
-    -h, --help            show this help message and exit
-    --version, -v         show program's version number and exit
+.. .. raw:: html
+.. 
+..   <embed>
+..   <div class="admonition-todo admonition" id="index-0">
+..   <p class="first admonition-title">TODO</p>
+..   <p class="last">Fix orders</p>
+..   </div>
+..   </embed>   
 
 
-1.1 cobra chip-init
------------------------
+:cobra scorepeaks:
 
-``chip-init``, literally, it is an ability for ChIP-seq data analysis. A simple example could be:
+   :ref:`scorepeaks` **is to calculate binding confidence for each gene given the ChIP-seq peakcalling.** For example, let's say you are interested in human STAT1 direct targets. You'll need two inputs to run ``cobra scorepeak``.
 
-.. highlight:: sh
+   - ``narrowPeak_dir/``: a directory contains all the narrowPeak files `(>20 files)`
+   - ``stat1_human.meme```: custom PWM file.
 
-::
+   Our current working folder structure shows below
 
-   cobra init --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 64
+   .. code-block:: sh
+      :emphasize-lines: 2
 
-.. note:: This command provides at lease 5 information which embedded into those parameters of ``cobra chip-init``: ``tf`` for transcription factors; ``i`` for input; ``meme`` for PWM; ``--human`` or ``--mouse`` for speicies; ``--core`` for num of cores.
+      [users]$ ls
+      narrowPeak_dir   stat1_human.meme   
 
-.. list-table:: cobra chip-init
+   If you have those two files prepared, you will be able to run ``cobra scorepeak`` now!
+   
+
+.. container:: toggle
+
+    .. container:: header
+		   
+        **show an example of** ``cobra scorepeaks``
+	
+    .. code-block:: sh
+       :linenos:
+
+       cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 8
+
+
+.. raw:: html
+
+   <details>
+   <summary><a>Parameters of cobra scorepeaks</a></summary>
+
+.. list-table:: cobra scorepeaks cheating sheet
     :widths: 10 20
     :header-rows: 1
 
@@ -121,21 +108,36 @@ If you run ``cobra --help``, you will get the following:
     * - ``--core``
       - num of cores to use *(default:1)*
 
+.. raw:: html
 
-The ChIP-seq peakcalling data is essential for COBRA training, without
+   </details>
+   
+-----------
+   
+:cobra find:
 
-1.2 cobra find
------------------------
+   This module is to find the TF direct target genes by given the binding scores for each gene plus differential expression analysis results. COBRA will require two inputs as well:
 
-Users could use ``cobra find`` to find potential TF target genes. Here is an example:
+   - csv file with binding confidence (``human_stat1.csv``)
+   - Differential expression analysis data (``rna_dir/``)
 
-.. highlight:: sh
+.. container:: toggle
 
-::
+    .. container:: header
+		   
+        **show an example of** ``cobra find``
+	
+    .. code-block:: sh
+       :linenos:
 
-   cobra find --tf STAT1 -c chip-init-outs.csv -r rna_dir/ -o output_dir/
+       cobra find --tf STAT1 -c chip-init-outs.csv -r rna_dir/ -o output_dir/
+   
 
-Similarly, COBRA this time is going to find the potential TF targets by providing ouptut_dir.
+       
+.. raw:: html
+
+   <details>
+   <summary><a>Parameters of cobra find</a></summary>
 
 .. list-table:: cobra find
     :widths: 10 20
@@ -152,20 +154,36 @@ Similarly, COBRA this time is going to find the potential TF targets by providin
     * - ``-o``
       - output dir. If it is not exist, create one.
 
+.. raw:: html
 
-1.3 cobra vis
------------------------
+   </details>
+   
+-----------
 
-The coolest ability that COBRA have is using ``cobra vis`` to draw some pretty images showing the TF binding status for every gene given the data. From those plots, bioloists would be able to discover some stories easier. Here is the magic command to activate ``cobra vis``.
+:cobra plot:
 
-.. highlight:: sh
+   The coolest ability that COBRA has is using ``cobra plot`` to draw some pretty images showing the TF binding status for every gene given the data. From those plots, bioloists would be able to discover some stories easier. You could set
 
-::
+   Here is the magic command to activate ``cobra plot``.
 
-   cobra vis --tf STAT1 -s mouse --gene STAT1 STAT3 -i output-cobra-find/ -o img/ -t truth.pl
+.. container:: toggle
+
+    .. container:: header
+		   
+        **show an example of** ``cobra plot``
+	
+    .. code-block:: sh
+       :linenos:
+
+       cobra plot --tf STAT1 -s mouse --gene STAT1 STAT3 -i output-cobra-find/ -o img/ -t truth.pl
+
+.. raw:: html
+
+   <details>
+   <summary><a>Parameters of cobra plot</a></summary>
 
 
-.. list-table:: cobra vis
+.. list-table:: cobra plot
     :widths: 10 20
     :header-rows: 1
 
@@ -184,7 +202,55 @@ The coolest ability that COBRA have is using ``cobra vis`` to draw some pretty i
     * - ``-t``
       - labels or targets (provided by users)
 
+.. raw:: html
 
-      
+   </details>
 
 
+-----------
+
+   
+Test COBRA
+~~~~~~~~~~~~~~
+
+a) Load test data
+>>>>>>>>>>>>>>>>>>
+
+For those new friends, you may not have your data prepared yet to train this snake.
+Don't worry, in order to get familiar with users, COBRA itself have a test dataset in its pocket.
+All you need to do is to do ammunition loading using ``cobra load`` which will automatically load the ChIP-seq data into ``./narrow/``, RNA-seq data into ``./rna/``.
+Why not give it a trail now?
+
+.. highlight:: sh
+
+::
+
+   # ammunition loading
+   cobra load
+
+If you check your folder with ``ls``, you will find two folders -  ``narrow`` and ``rna`` from  your current working directory (please make sure that COBRA have the permission to ``mkdir`` in the current working directory). Also, if you want to load in other folders, you can simply use the parameter ``--dir`` or ``-d`` following by the folder you want. (COBRA documentation writor assume that you are lazy and will load test data in the current working directory.)
+
+b) Run cobra normally
+>>>>>>>>>>>>>>>>>>>>>>
+Once you have your test data prepared, you could simply run ``cobra scorepeaks`` and ``cobra find`` step by step to get the results.
+
+.. highlight:: sh
+
+::
+
+   # this step would generate multiple files for future usage (by default --tf: STAT1)
+   cobra scorepeaks -i narrow/ --meme stat1_human.meme --human --core 8
+
+   ######### Done: after a few seconds #########
+
+   # gives input files or folders and output folders (GMM model will be trained)
+   cobra find -c human_stat1.csv -r rna/ -o output/
+
+   ######### A few seconds later: you will find your results in output/ #########
+
+c) Generate figures
+>>>>>>>>>>>>>>>>>>>>>
+
+Let's do some visualisation now. If you do ``ls``, you will find there are a few files available now. You have ``fimo.csv`` which is a intermediate step of motif filtering.
+
+   

@@ -1,0 +1,321 @@
+.. _how-to:
+
+================
+How-to guides
+================
+
+After building up the environment for COBRA from the :ref:`installation`, this page will help you explore the abilities of COBRA, and guide you how to train this snake to do its jobs.
+
+Setup
+~~~~~~~~~~~~~~
+.. TODO setup document
+
+Before you start, please make sure you have all the required environment prepared. If you haven't done so yet, please check those out!
+
+- :ref:`environment`
+- :ref:`installation`
+
+.. admonition:: when you are ready
+
+		Cool, now let us have a look what kind of abilities does this snake have.	
+
+Main Modules
+~~~~~~~~~~~~~~
+Before we start, let's just quickly go through its main modules. Currently, COBRA contains three main modules:
+
+
+.. list-table:: COBRA main modules
+    :widths: 15 10 30
+    :header-rows: 1
+
+    * - Command
+      - Inputs
+      - Outputs
+    * - ``cobra scorepeak``
+      - narrowPeaks, custom PWM files
+      - csv file with binding confidence
+    * - ``cobra find``
+      - binding confidence, csv file with differential expression
+      - target genes with target probability
+    * - ``cobra plot``
+      - outputs from previous steps, labels
+      - dotplots and other plots
+
+
+*Note that: COBRA still have some other side abilities which would be introduced later. If you run* ``cobra --help`` *, you will get all the information you need.*
+
+----------
+
+.. raw:: html
+
+  <embed>
+  <div class="admonition-todo admonition" id="index-0">
+  <p class="first admonition-title">TODO</p>
+  <p class="last">Fix orders</p>
+  </div>
+  </embed>   
+
+
+:cobra scorepeaks:
+
+   :ref:`scorepeaks` **is to calculate binding confidence for each gene given the ChIP-seq peakcalling.** For example, let's say you are interested in human STAT1 direct targets. You'll need two inputs to run ``cobra scorepeak``.
+
+   - ``narrowPeak_dir/``: a directory contains all the narrowPeak files `(>20 files)`
+   - ``stat1_human.meme```: custom PWM file.
+
+   Our current working folder structure shows below
+
+   .. code-block:: sh
+      :emphasize-lines: 2
+
+      [users]$ ls
+      narrowPeak_dir   stat1_human.meme   
+
+   If you have those two files prepared, you will be able to run ``cobra scorepeak`` now!
+   
+
+.. container:: toggle
+
+    .. container:: header
+		   
+        **usage of cobra scorepeaks**
+	
+    .. code-block:: sh
+       :linenos:
+
+       cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 8
+
+
+-----------
+   
+:cobra find:
+
+   This module is to find the TF direct target genes by given the binding scores for each gene plus differential expression analysis results. COBRA will require two inputs as well:
+
+   - csv file with binding confidence (``human_stat1.csv``)
+   - Differential expression analysis data (``rna_dir/``)
+
+.. container:: toggle
+
+    .. container:: header
+		   
+        **usage of** ``cobra find``
+	
+    .. code-block:: sh
+       :linenos:
+
+       cobra find --tf STAT1 -c chip-init-outs.csv -r rna_dir/ -o output_dir/
+   
+
+       
+.. raw:: html
+
+   <details>
+   <summary><a>cobra find parameters</a></summary>
+
+.. list-table:: cobra find
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Parameters
+      - Functions
+    * - ``--tf``
+      - TF of interest *(default: STAT1)*
+    * - ``-c``
+      - csv files of chip confidence binging outputs *(default: ./)*
+    * - ``-r``
+      - input of differential expression data or directory.
+    * - ``-o``
+      - output dir. If it is not exist, create one.
+
+.. raw:: html
+
+   </details>
+   
+-----------
+
+:cobra plot:
+
+   The coolest ability that COBRA has is using ``cobra plot`` to draw some pretty images showing the TF binding status for every gene given the data. From those plots, bioloists would be able to discover some stories easier. You could set
+
+   Here is the magic command to activate ``cobra plot``.
+
+.. highlight:: sh
+
+::
+
+   cobra plot --tf STAT1 -s mouse --gene STAT1 STAT3 -i output-cobra-find/ -o img/ -t truth.pl
+
+Test COBRA
+~~~~~~~~~~~~~~
+
+
+
+
+   
+
+`ChIP-seq: cobra scorepeak`
+---------------------------
+
+``scorepeak`` is an ability to score ChIP-seq peakcalling. A simple example could be:
+
+.. highlight:: sh
+
+::
+
+   cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 64
+
+.. note:: This command provides at lease 5 information which embedded into those parameters of ``cobra chip-init``: ``tf`` for transcription factors; ``i`` for input; ``meme`` for PWM; ``--human`` or ``--mouse`` for speicies; ``--core`` for num of cores.
+
+.. list-table:: cobra chip-init
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Parameters
+      - Functions
+    * - ``--tf``
+      - TF of interest *(default: STAT1)*
+    * - ``-i``
+      - input of narrowPeaks *(default: ./)*
+    * - ``--meme``
+      - input of custom PWM files *(default: tf_speicies.meme)*
+    * - ``--human`` or ``--mouse``
+      - given one to select speicies *(default: mouse)*
+    * - ``--core``
+      - num of cores to use *(default:1)*
+
+
+The ChIP-seq peakcalling data is essential for COBRA training, without
+
+1.2 cobra find
+-----------------------
+
+Users could use ``cobra find`` to find potential TF target genes. Here is an example:
+
+.. highlight:: sh
+
+::
+
+   cobra find --tf STAT1 -c chip-init-outs.csv -r rna_dir/ -o output_dir/
+
+Similarly, COBRA this time is going to find the potential TF targets by providing ouptut_dir.
+
+.. list-table:: cobra find
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Parameters
+      - Functions
+    * - ``--tf``
+      - TF of interest *(default: STAT1)*
+    * - ``-c``
+      - csv files of chip confidence binging outputs *(default: ./)*
+    * - ``-r``
+      - input of differential expression data or directory.
+    * - ``-o``
+      - output dir. If it is not exist, create one.
+
+
+1.3 cobra vis
+-----------------------
+
+The coolest ability that COBRA have is using ``cobra vis`` to draw some pretty images showing the TF binding status for every gene given the data. From those plots, bioloists would be able to discover some stories easier. Here is the magic command to activate ``cobra vis``.
+
+.. highlight:: sh
+
+::
+
+   cobra vis --tf STAT1 -s mouse --gene STAT1 STAT3 -i output-cobra-find/ -o img/ -t truth.pl
+
+
+.. list-table:: cobra vis
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Parameters
+      - Functions
+    * - ``--tf``
+      - TF of interest *(default: STAT1)*
+    * - ``-s``
+      - species
+    * - ``--gene``
+      - list of genes of interest
+    * - ``-i``
+      - outputs of cobra find (target genes with probs)
+    * - ``-o``
+      - image outputs dir
+    * - ``-t``
+      - labels or targets (provided by users)
+
+
+1.4 Other abilities
+---------------------
+
+
+For the new friends, you may not have your data prepared yet to train this snake.
+Don't worry, in order to get familiar with users, COBRA itself have a test dataset in its pocket.
+All you need to do is to do ammunition loading using ``cobra load`` which will automatically load the ChIP-seq data into ``./narrow/``, RNA-seq data into ``./rna/``.
+Why not give it a trail now?
+
+.. highlight:: sh
+
+::
+
+   # ammunition loading
+   cobra load
+
+If you check your folder with ``ls``, you will find two folders -  ``narrow`` and ``rna`` from  your current working directory (if COBRA have the permission to ``mkdir``).
+
+
+we provide a tiddy dataset for you to get familiar with
+
+
+Other styles
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. admonition:: cobra scorepeaks
+
+   This module is to score ChIP-seq peakcalling. Let's say you are interested in STAT1 direct targets. Our current working folder structure shows below
+
+   .. code-block:: sh
+      :emphasize-lines: 2
+
+      [users]$ ls
+      narrowPeak_dir   stat1_human.meme
+
+   We have two inputs:
+   
+   - ``narrowPeak_dir/``: a directory contains all the narrowPeak files `(>20 files)`
+   - ``stat1_human.meme```: custom PWM file.
+
+   If you have those two files prepared, you will be able to run ``cobra scorepeak`` now!
+   
+   .. highlight:: sh
+   
+   ::
+   
+      cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 8
+
+.. admonition:: cobra find
+
+   This module is to score ChIP-seq peakcalling. Let's say you are interested in STAT1 direct targets. Our current working folder structure shows below
+
+   .. code-block:: sh
+      :emphasize-lines: 2
+
+      [users]$ ls
+      narrowPeak_dir   stat1_human.meme
+
+   We have two inputs:
+   
+   - ``narrowPeak_dir/``: a directory contains all the narrowPeak files `(>20 files)`
+   - ``stat1_human.meme```: custom PWM file.
+
+   If you have those two files prepared, you will be able to run ``cobra scorepeak`` now!
+   
+   .. highlight:: sh
+   
+   ::
+   
+      cobra scorepeak --tf STAT1 -i narrowPeak_dir/ --meme stat1_human.meme --human --core 8
+

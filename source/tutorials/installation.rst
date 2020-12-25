@@ -65,7 +65,7 @@ We recommand users to create a virual environment (optional)
    python -m venv venv
    source venv/bin/activate
 
-Install those CORBA required packages
+Install those COBRA required packages
 
 .. highlight:: sh
 
@@ -78,4 +78,4 @@ Install those CORBA required packages
 
 Now, hopefully, COBRA is ready to work!
 
-.. note:: Welcome on board! You have your own COBRA now. The next section will tell you the abilities of COBRA and guide you train this snake step-by-step.
+.. note:: Welcome on board! You have your own COBRA now. The next section will tell you the abilities of COBRA and guide you to  train this snake step-by-step.

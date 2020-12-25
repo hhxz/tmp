@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cobra \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 08:39+0000\n"
+"POT-Creation-Date: 2020-12-25 18:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,5 +19,32 @@ msgstr ""
 
 #: ../keypoints/keypoints.rst:5
 msgid "Key points"
+msgstr ""
+
+#: ../keypoints/keypoints.rst:7
+msgid "We draw some diagrams for guide your project key points when using COBRA."
+msgstr ""
+
+#: ../keypoints/keypoints.rst:10
+msgid "0 Select TF of interest"
+msgstr ""
+
+#: ../keypoints/keypoints.rst:12
+msgid ""
+"Firstly, you will need to have a goal that which TF you are interested "
+"in. All if you are interested in all the existing TFs, you can visit "
+"Remap2020 to download those bed files to use."
+msgstr ""
+
+#: ../keypoints/keypoints.rst:17
+msgid "1 ChIP-seq Scoring"
+msgstr ""
+
+#: ../keypoints/keypoints.rst:23
+msgid "2 Differential express analysis modelling"
+msgstr ""
+
+#: ../keypoints/keypoints.rst:28
+msgid "3 Visualisation"
 msgstr ""
 
