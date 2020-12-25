@@ -39,9 +39,7 @@ msgid ""
 "could do some cool stuffs, like dotplot painting. Why not have one "
 "yourself? Check this page out to see how it works now!"
 msgstr ""
-"COBRA是一个优秀的TF目标基因猎手，凭借其蛇类出色的ChIP-seq嗅觉，以及RNA-"
-"seq触觉，在此领域独当一面。然而，它也有自己的缺点，和贪吃蛇一样，它也很贪心。所以，要使得COBRA变得靠谱，你必须投喂至少20个ChIP-"
-"seq实验。一旦得到了足够的喂投，COBRA可以开始做一些有趣的事情，比如绘图。是不是很有意思的一条蛇，领它！"
+"相传，python家族里有一只灵蛇COBRA，潜心修炼，这不在这纷乱的2020年年末，赶上末班车收录进了SS-ZOO。COBRA凭借自己在蛇类特有的敏锐的RNA-seq嗅觉以及ChIP-seq触感取得了TF基因捕猎者的称号。对地球上的生物学家来说，TF目标基因的寻找一直是一个严峻的挑战，这么久以来，神通广大的科学家们用尽招数对它进行寻找和研究，研发出了诸如BETA和RCade等一系列工具，但是效果有时候还是不尽人意。为了提高搜寻效果，COBRA利用现有的机器学习理论，配合DBSCAN以及Gaussian Mixture Model，贪婪地吸取利用着着用户提供的每一组ChIP-seq实验数据，和RNA-seq数据，相信有了COBRA的陪伴，你在目标基因寻找中的旅途将不再孤单！如果你也有心寻找挖掘TF目标基因的宝藏，为什么不来这里领用一只属于你的COBRA呢？相信它能够成为一只你科研旅途中强有力的引路蛇！"
 
 #: ../index.rst:50
 msgid ":ref:`installation` - start here"
