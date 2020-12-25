@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../guide/howto.rst:5
 msgid "How-to guides"
-msgstr ""
+msgstr "手把手教学"
 
 #: ../guide/howto.rst:7
 msgid ""

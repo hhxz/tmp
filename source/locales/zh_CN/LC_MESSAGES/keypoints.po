@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../keypoints/keypoints.rst:5
 msgid "Key points"
-msgstr ""
+msgstr "关键看这"
 
 #: ../keypoints/keypoints.rst:7
 msgid "We draw some diagrams for guide your project key points when using COBRA."
