@@ -50,6 +50,7 @@ msgid ""
 "For those new to SS-ZOO, start here to get your own COBRA locally now! "
 "Good luck on your journey!"
 msgstr ""
+"新来的游客你好，如果想要一只属于你的COBRA的话请移步此处查看详情，祝你好运！"
 
 #: ../index.rst:59
 msgid ":ref:`how-to`"
@@ -60,26 +61,32 @@ msgid ""
 "Introduce the COBRA abilities; practical step-by-step guides for the new "
 "COBRA users, covering several important topics."
 msgstr ""
+"介绍COBRA的技能以及实力手把手教学带你5分钟掌握COBRA的使用方法"
 
 #: ../index.rst:66
 msgid ":ref:`key-points`"
 msgstr ""
+"关键技术点"
 
 #: ../index.rst:68
 msgid "Explanation and analysis of some key features."
 msgstr ""
+"探索一些关键的features"
 
 #: ../index.rst:73
 msgid ":ref:`reference`"
 msgstr ""
+"引用"
 
 #: ../index.rst:75
 msgid "Technical reference material, for classes, methods, APIs, commands."
 msgstr ""
+"COBRA是站在巨人的肩膀上才诞生的，在此列出所有帮助COBRA的巨人们"
 
 #: ../index.rst:79
 msgid "Why the name COBRA?"
 msgstr ""
+"为什么叫COBRA"
 
 #: ../index.rst:81
 msgid ""
