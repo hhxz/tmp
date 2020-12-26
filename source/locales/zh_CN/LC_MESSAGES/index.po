@@ -39,18 +39,18 @@ msgid ""
 "could do some cool stuffs, like dotplot painting. Why not have one "
 "yourself? Check this page out to see how it works now!"
 msgstr ""
-"相传，python家族里有一只灵蛇COBRA，潜心修炼，这不在这纷乱的2020年年末，赶上末班车收录进了SS-ZOO。COBRA凭借自己在蛇类特有的敏锐的RNA-seq嗅觉以及ChIP-seq触感取得了TF基因捕猎者的称号。对地球上的生物学家来说，TF目标基因的寻找一直是一个严峻的挑战，这么久以来，神通广大的科学家们用尽招数对它进行寻找和研究，研发出了诸如BETA和RCade等一系列工具，但是效果有时候还是不尽人意。为了提高搜寻效果，COBRA利用现有的机器学习理论，配合DBSCAN以及Gaussian Mixture Model，贪婪地吸取利用着着用户提供的每一组ChIP-seq实验数据，和RNA-seq数据，相信有了COBRA的陪伴，你在目标基因寻找中的旅途将不再孤单！如果你也有心寻找挖掘TF目标基因的宝藏，为什么不来这里领用一只属于你的COBRA呢？相信它能够成为一只你科研旅途中强有力的引路蛇！"
+"相传，python家族里有一只灵蛇COBRA，潜心修炼，这不在这纷乱的2020年年末，赶上末班车收录进了SS-ZOO。COBRA凭借自己在蛇类特有的敏锐的RNA-seq嗅觉以及ChIP-seq触感取得了TF基因捕猎者的称号。对地球上的生物学家来说，TF目标基因的寻找一直是一个严峻的挑战，这么久以来，神通广大的科学家们用尽招数对它进行寻找和研究，研发出了诸如BETA和RCade等一系列工具，但是效果有时候还是不尽人意。为了提高搜寻效果，COBRA利用现有的机器学习理论，配合DBSCAN以及Gaussian Mixture Model，贪婪地吸取利用着着用户提供的每一组ChIP-seq实验数据，和RNA-seq数据，相信有了COBRA的陪伴，你在目标基因寻找中的旅途将不再孤单！如果你也有心寻找挖掘TF目标基因的宝藏，为什么不带着你的装备来这里领用一只只属于你的COBRA呢？相信它能够成为一只你科研旅途中强有力的引路蛇！"
 
 #: ../index.rst:50
 msgid ":ref:`installation` - start here"
-msgstr ":ref:`installation` - 开始"
+msgstr ":ref:`installation` - 领养指南"
 
 #: ../index.rst:52
 msgid ""
 "For those new to SS-ZOO, start here to get your own COBRA locally now! "
 "Good luck on your journey!"
 msgstr ""
-"新来的游客你好，如果想要一只属于你的COBRA的话请移步此处查看详情，祝你好运！"
+"新来的游客你好，你和COBRA只有一步之遥了，如果想要一只属于你的COBRA的话请移步此处查看养好COBRA所需的环境，祝你好运！"
 
 #: ../index.rst:59
 msgid ":ref:`how-to`"
@@ -61,7 +61,7 @@ msgid ""
 "Introduce the COBRA abilities; practical step-by-step guides for the new "
 "COBRA users, covering several important topics."
 msgstr ""
-"介绍COBRA的技能以及实力手把手教学带你5分钟掌握COBRA的使用方法"
+"介绍训练COBRA所需的装备以及COBRA的主要技能，提供实例手把手教学，带你5分钟掌握COBRA的使用方法"
 
 #: ../index.rst:66
 msgid ":ref:`key-points`"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../index.rst:68
 msgid "Explanation and analysis of some key features."
-msgstr "探索一些关键的features"
+msgstr "探索一些关键的feature，以及注意事项"
 
 #: ../index.rst:73
 msgid ":ref:`reference`"
@@ -80,7 +80,7 @@ msgstr ""
 #: ../index.rst:75
 msgid "Technical reference material, for classes, methods, APIs, commands."
 msgstr ""
-"COBRA是站在巨人的肩膀上才诞生的，在此列出所有帮助COBRA的巨人们"
+"COBRA是站在巨人的肩膀上才诞生的，所以理应长怀感恩之心，在此列出所有帮助COBRA的巨人们"
 
 #: ../index.rst:79
 msgid "Why the name COBRA?"
