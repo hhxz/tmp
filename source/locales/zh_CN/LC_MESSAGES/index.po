@@ -50,7 +50,7 @@ msgid ""
 "For those new to SS-ZOO, start here to get your own COBRA locally now! "
 "Good luck on your journey!"
 msgstr ""
-"新来的游客你好，你和COBRA只有一步之遥了，如果想要一只属于你的COBRA的话请移步此处查看养好COBRA所需的环境，祝你好运！"
+"新来的游客你好，你和COBRA只有一步之遥了，如果想要一只属于你的COBRA的话请移步此处，祝你好运！"
 
 #: ../index.rst:59
 msgid ":ref:`how-to`"
